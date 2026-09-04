@@ -1,0 +1,45 @@
+# ============================================================
+# Shree Annapurna Smart Billing System — .gitignore
+# ============================================================
+
+# --- Maven build output ---
+target/
+dependency-reduced-pom.xml
+
+# --- Java compiled classes ---
+*.class
+
+# --- IDE project files ---
+.idea/
+*.iml
+.vscode/
+*.project
+*.classpath
+.settings/
+
+# --- Maven wrapper (local Maven binary copy) ---
+bin/
+
+# --- Manually bundled JARs (resolved by Maven) ---
+lib/
+
+# --- Inno Setup generated installer output ---
+Output/
+
+# --- Generated MANIFEST (Maven Shade creates this in target/) ---
+META-INF/
+
+# --- Deployment: local-only, credentials, large binaries ---
+deployment/output/
+deployment/mysql/
+deployment/*.zip
+deployment/app-config.properties
+
+# --- Embedded JDK accidentally placed under src/ ---
+# Cannot be deleted while IDE JVM is active; gitignore it instead.
+src/main/java/com/smartbilling/oracleJdk-26/
+
+# --- OS artifacts ---
+Thumbs.db
+.DS_Store
+ehthumbs.db
