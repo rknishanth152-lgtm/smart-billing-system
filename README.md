@@ -164,7 +164,7 @@ run_app.bat
 | Role | Username | Password |
 |---|---|---|
 | Admin | admin | admin123 |
-| Employee | employee | emp123 |
+| Employee | emp | emp123 |
 
 *(Passwords are stored as BCrypt hashes in the `users` table. Seed data is defined in `schema.sql`.)*
 
